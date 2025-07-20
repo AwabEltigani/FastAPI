@@ -3,7 +3,7 @@ from typing import Optional
 
 from pydantic import BaseModel, EmailStr, conint
 
-from FastAPI import models
+from FastAPI90 import models
 
 
 class UserResponse(BaseModel):

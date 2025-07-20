@@ -1,8 +1,8 @@
 from fastapi import FastAPI, APIRouter
-from FastAPI import models
-from FastAPI.database import engine
+from FastAPI90 import models
+from FastAPI90.database import engine
 from routers import post, user ,authentication,vote
-from FastAPI.config import settings
+from FastAPI90.config import settings
 from fastapi.middleware.cors import CORSMiddleware
 
 #for the columns it doesnt pass the columns so we have to pass RealDictCursor

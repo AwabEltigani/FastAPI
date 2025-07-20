@@ -4,7 +4,7 @@ from sqlalchemy.orm import relationship
 # to create a
 # column,import integer,
 
-from FastAPI.database import Base #defines out models
+from FastAPI90.database import Base #defines out models
 
 class Post(Base):
     __tablename__ = "posts"

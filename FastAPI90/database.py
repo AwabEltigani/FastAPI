@@ -1,7 +1,8 @@
 from sqlalchemy import create_engine #creates the specific connection to the database
 from sqlalchemy.ext.declarative import declarative_base #creates a base class for your orm model
 from sqlalchemy.orm import sessionmaker #allows us to write python functions and statements translates to SQL
-from FastAPI.config import settings
+from FastAPI90.config import settings
+
 
 
 

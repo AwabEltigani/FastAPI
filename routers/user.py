@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 from starlette import status
-from FastAPI import utils, models, schemas
-from FastAPI.database import get_db
+from FastAPI90 import utils, models, schemas
+from FastAPI90.database import get_db
 
 router = APIRouter(
     prefix="/users",

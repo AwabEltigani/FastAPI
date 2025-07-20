@@ -1,11 +1,11 @@
 from typing import List, Optional
 from sqlalchemy.orm import Session
-from FastAPI.database import get_db
-from FastAPI import models,schemas,oauth2
+from FastAPI90.database import get_db
+from FastAPI90 import models,schemas,oauth2
 from fastapi import Response, status, HTTPException, Depends, APIRouter
 from sqlalchemy import func
 
-from FastAPI.schemas import PostResponse
+from FastAPI90.schemas import PostResponse
 
 router = APIRouter(
     prefix="/posts",
