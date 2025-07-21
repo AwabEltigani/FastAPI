@@ -1,8 +1,5 @@
 from fastapi import FastAPI, APIRouter
-from FastAPI90 import models
-from FastAPI90.database import engine
 from routers import post, user ,authentication,vote
-from FastAPI90.config import settings
 from fastapi.middleware.cors import CORSMiddleware
 
 #for the columns it doesnt pass the columns so we have to pass RealDictCursor
@@ -20,11 +17,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 router = APIRouter()
-
-
-
-
-
 
 app.include_router(post.router)
 app.include_router(user.router)
