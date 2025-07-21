@@ -38,6 +38,7 @@ class PostCreate(BaseModel):
     content: str  # expects a String Content
     published: bool = True  # Publish is optional defaults to True
 
+
 class PostUpdate(BaseModel):
     title: str  # expects a String title
     content: str  # expects a String Content
@@ -46,6 +47,7 @@ class PostUpdate(BaseModel):
 class UserCreate(BaseModel):
     email: EmailStr
     password: str
+    phone_num:str
 
 class Token(BaseModel):
     access_token : str
