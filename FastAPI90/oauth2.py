@@ -7,7 +7,7 @@ from FastAPI90 import schemas, models, database
 from fastapi.security import OAuth2PasswordBearer
 
 from FastAPI90.config import settings
-from FastAPI90.database import get_db
+
 
 oauth2_scheme =OAuth2PasswordBearer(tokenUrl='login')
 

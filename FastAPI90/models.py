@@ -22,7 +22,7 @@ class User(Base):
 
     id = Column(Integer,primary_key=True)
     email=Column (String(255), nullable = False,unique = True)
-    password = Column(String(128) , nullable = False)
+    password = Column(String(128), nullable=False)
     created_at = Column(TIMESTAMP(timezone=True),nullable = False,server_default=text("now()"))
     phone_num = Column(String(20),nullable =True,unique=True)
 

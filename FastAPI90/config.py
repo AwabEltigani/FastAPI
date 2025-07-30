@@ -1,4 +1,8 @@
+from pydantic import ValidationError
 from pydantic.v1 import BaseSettings
+import os
+
+
 
 class Settings(BaseSettings):#pydantic will handle capitalization
     database_host : str
@@ -10,8 +14,11 @@ class Settings(BaseSettings):#pydantic will handle capitalization
     algorithm : str
     access_token_expire_minutes : int
 
+
     class Config:
-        env_file = './FastAPI/.env'
+        env_file = os.path.join(os.path.dirname(__file__), '.env')
+
 
 settings = Settings()
+
 

@@ -34,6 +34,8 @@ def get_post(id:int,db: Session = Depends(get_db),current_user: schemas.TokenDat
         if not query:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Post with id:{id} does not exist ")
         post_with_votes = query.first()
+        if not post_with_votes:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Post with id:{id} does not exist ")
         post, votes = post_with_votes# post_with_votes == [post,votes] we just assigned post = post and votes = votes
         return {"post":post,"votes":votes}
 
