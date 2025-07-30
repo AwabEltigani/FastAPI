@@ -3,7 +3,14 @@ import os
 
 
 
-
+os.environ["database_host"] = "localhost"
+os.environ["database_port"] = "5432"
+os.environ["database_name"] = "test"
+os.environ["database_username"] = "postgres"
+os.environ["database_password"] = "Arsenalforever10&"
+os.environ["secret_key"] = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"
+os.environ["algorithm"] = "HS256"
+os.environ["access_token_expire_minutes"] = "30"
 from jose import jwt
 from FastAPI90.oauth2 import Algorithm, Secret_Key
 from FastAPI90 import schemas
